@@ -18,6 +18,13 @@ git --version
 
 Αν δεν εμφανιστεί κάποιο error, τότε έχετε εγκαταστήσει το git επιτυχώς.
 
+### Configure git
+
+Χρησιμοποιείστε το ίδιο όνομα και email που βάλατε όταν φτιάξατε τον λογαριασμό στο github.
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
 Χρήσιμα links:
 
 - https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows
