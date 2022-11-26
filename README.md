@@ -6,8 +6,9 @@
 2. Ανοίξτε τον installer ύστερα που τον κατεβάσετε και συνεχίστε να πατάτε next με τα default options και τελικά install.
 3. Όταν τελειώσει, ανοίξτε το terminal και γράψτε την παρακάτω εντολή:
 
-```
-git --version
+```console
+> git --version
+git version 2.30.0.windows.2
 ```
 
 Αν δεν εμφανιστεί κάποιο error, τότε έχετε εγκαταστήσει το git επιτυχώς.
