@@ -36,7 +36,7 @@ git clone https://github.com/SilverBlade159/ComputerScienceProject.git
 
 ### Την πρώτη φορά που θα κάνετε προσθήκη κώδικα
 
-```console
+```
 cd ../ComputerScienceProject // συμπληρώστε το κατάλληλο path
 git remote add origin git@github.com:SilverBlade159/ComputerScienceProject.git
 git add .
