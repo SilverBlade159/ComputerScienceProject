@@ -6,9 +6,8 @@
 2. Ανοίξτε τον installer ύστερα που τον κατεβάσετε και συνεχίστε να πατάτε next με τα default options και τελικά install.
 3. Όταν τελειώσει, ανοίξτε το terminal και γράψτε την παρακάτω εντολή:
 
-```console
-> git --version
-git version 2.30.0.windows.2
+```
+git --version
 ```
 
 Αν δεν εμφανιστεί κάποιο error, τότε έχετε εγκαταστήσει το git επιτυχώς.
@@ -37,7 +36,7 @@ git clone https://github.com/SilverBlade159/ComputerScienceProject.git
 
 ### Την πρώτη φορά που θα κάνετε προσθήκη κώδικα
 
-```
+```console
 cd ../ComputerScienceProject // συμπληρώστε το κατάλληλο path
 git remote add origin git@github.com:SilverBlade159/ComputerScienceProject.git
 git add .
