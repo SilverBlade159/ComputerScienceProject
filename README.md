@@ -52,16 +52,18 @@ git clone https://github.com/SilverBlade159/ComputerScienceProject.git
 ```
 cd ../ComputerScienceProject // συμπληρώστε το κατάλληλο path
 git remote add origin git@github.com:SilverBlade159/ComputerScienceProject.git
-git add .
+git add -A
 git commit -m "Αναφέρετε τις αλλαγές στον κώδικα"
 git push -u origin main
 ```
+
+Μόλις κάνετε push, θα σας εμφανιστεί ένα παράθυρο για authentication.
 
 ### Μετέπειτα χρησιμοποιείστε αυτές τις εντολές όταν θέλετε να προσθέσετε κώδικα
 
 ```
 cd ../ComputerScienceProject // συμπληρώστε το κατάλληλο path
-git add .
+git add -A
 git commit -m "Αναφέρετε τις αλλαγές στον κώδικα"
 git push
 ```
