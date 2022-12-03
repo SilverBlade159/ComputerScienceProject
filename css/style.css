@@ -1,0 +1,265 @@
+/*------------------------------------------------
+CSS STRUCTURE:
+
+1. GENERAL
+	1.1 Global Reset 
+	1.2 General Styles	
+	1.3 List Styles
+	1.4 Headers
+	1.5 Tables
+
+2. SITE STRUCTURE	
+	2.1 Header
+	2.2 Menu
+	2.3 Main
+	2.4 Footer
+------------------------------------------------*/	
+
+
+/*============================================================================================*/
+/* 1. GENERAL */
+/*============================================================================================*/
+/*----------------------------------------------*/
+/* 1.1 Global Reset */
+/*----------------------------------------------*/
+
+footer, header, menu, nav {
+	display: block
+}
+
+html { 
+	font-size: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+	-webkit-font-smoothing: antialiased
+}
+
+	
+/*----------------------------------------------*/
+/* 1.2 General Styles */
+/*----------------------------------------------*/
+body {
+    width: 100%;
+    height: 100%;
+	margin:0px;
+	padding:0px;
+    font-family: "Open Sans",sans-serif;
+    font-size:14px;
+}
+
+img {
+	width:100%
+}
+
+
+/*----------------------------------------------*/
+/* 1.3 List Styles */
+/*----------------------------------------------*/
+ul{
+	list-style:disc outside
+}
+
+ol{ 
+	list-style:decimal outside
+}
+
+li{ 
+	margin:2px 0
+}
+
+ol li{ 
+	margin-top:5px; 
+	margin-bottom:7px 
+}
+
+ul, ol, dd{ 
+	margin-left:25px
+}
+
+ul ul, ol ul, ul ol, ol ol{ 
+	margin-bottom:0
+}
+
+
+/*----------------------------------------------*/
+/* 1.4 Headers */
+/*----------------------------------------------*/
+h1,h2,h3,h4,h5,h6,p{
+	font-weight:normal;
+	font-family: 'LeagueGothic', 'Open Sans Condensed', Tahoma, Geneva, sans-serif;
+	color:#01134b;  /* ΣΚΟΥΡΟ ΜΠΛΕ */
+	line-height:1.2em;
+}
+
+h1 span, h2 span, h3 span ,h4 span, h5 span {
+	color:#fea700; /* ΛΑΧΑΝΙ */
+}
+	
+h1{
+	font-size:32px;
+	text-align:center;
+}	
+	
+h2{
+	font-size:27px;
+	margin-bottom:15px;
+	color:#fea700;	/* ΑΝΟΙΧΤΟ ΠΟΡΤΟΚΑΛΙ */
+}
+	
+h3{
+	font-size:24px;
+	margin-bottom:10px;
+}
+	
+h4{
+	font-size:22px;
+	margin-bottom:10px;
+}
+	
+h5{
+	font-size:20px;
+	margin:7px 0 5px;
+	text-align:justify;
+}
+	
+h6{
+	font-size:18px;
+}
+
+p{
+	font-size:20px;
+	margin:7px 10px 5px 10px;
+	text-align:justify;
+}
+
+em{
+	color:brown;
+}
+
+/*----------------------------------------------*/
+/* 1.5 Tables */
+/*----------------------------------------------*/
+table,td,th {
+	vertical-align:middle; 
+	text-align:center;
+	border-collapse:collapse;
+}
+th { 
+	padding:0 5px 0 0; 
+	font-size:14px; 
+	border:1px solid black;
+}
+td{ 
+	font-size:13px; 
+	padding:0px;  
+	border:1px solid black;
+}
+
+
+
+/*============================================================================================*/
+/*============================================================================================*/
+/* 2. SITE STRUCTURE */
+/*============================================================================================*/
+/*============================================================================================*/
+	
+/*----------------------------------------------*/
+/* 2.1 Header */
+/*----------------------------------------------*/
+#header {
+	background-color: grey;			/* Χρώμα που εμφανίζετε στα πλαινά του header*/
+	position:relative;
+}
+.header_bg {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	/*Δίνει εφε σκίασης*/
+	width:1024px;	
+	margin:auto;
+	height:450px;
+}
+.logo {
+	width:200px;
+	height:150px;
+	position:absolute;
+}
+
+
+/*----------------------------------------------*/
+/* 2.2 Menu */
+/*----------------------------------------------*/
+
+
+.menu {
+	width:100%;
+	margin:auto;
+	position:absolute;
+	bottom:30px;
+	background-color: grey;		
+	opacity:0.7;		/* Πόσο έντονα θα φαίνετε το background */
+}
+.inner_menu {
+	width:600px;
+	margin:auto;
+	padding:0px;
+}
+.menu ul {
+	list-style-type: none;
+	width:100%;
+	margin: auto;
+	padding: 0;
+}
+.menu li {
+	float: left;
+}
+.menu li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+.menu li a:hover {
+	background-color: #111111;
+}
+
+/*----------------------------------------------*/
+/* 2.3 Main */
+/*----------------------------------------------*/
+
+.thin_line {
+	position: relative;
+	background:#E3E1E1;
+    width: 100%;
+    padding: 0px;
+    height: 5px;
+}
+.thick_line {
+	position: relative;
+	background:grey;
+    width: 100%;
+    height: 30px;
+}
+
+/*----------------------------------------------*/
+/* 2.4 Footer */
+/*----------------------------------------------*/
+
+#footer {
+	position:relative;
+	color: grey;
+	font: italic bold 20px sans-serif;
+}
+.footer_t table{
+	width:500px;	
+	margin:auto;
+	padding:0;
+	background-color:grey;
+}
+.footer_t th {
+	color:blue;
+	size:14px;
+}
+.footer_t td {
+	color:cyan;
+	size:14px;
+}
+	
