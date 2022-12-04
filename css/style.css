@@ -227,6 +227,11 @@ td{
 /*----------------------------------------------*/
 /* 2.3 Main */
 /*----------------------------------------------*/
+#main {
+	width:100%;
+	margin:auto;
+	padding:0;
+}
 
 .thin_line {
 	position: relative;
@@ -250,7 +255,7 @@ td{
 .column {
   flex: 33.33%;
   padding: 5px;
-
+}
 /*----------------------------------------------*/
 /* 2.4 Footer */
 /*----------------------------------------------*/
@@ -310,4 +315,73 @@ td{
   display: inline-block; 	/* Needed to add space between the bullet and the text */
   width: 2em; 				/* Also needed for space (tweak if needed) */
   margin-left: -1em; 		/* Also needed for space (tweak if needed) */
+}
+
+
+/*----------------------------------------------*/
+/* 3.2 Deli */
+/*----------------------------------------------*/
+
+.deli_layout {
+	width:1024px;
+	margin:auto;
+	padding:0;
+}
+
+.deli_layout p{
+	margin-bottom: 20px;
+}
+.deli_right_img {
+	float:right; 
+	width:250px; 
+	margin-left:20px; 
+	margin-bottom:20px; 
+	border:1px solid; 
+	border-radius: 8px; 
+	padding: 2px;
+}
+
+.all_cards {
+	width:800px;
+	margin:auto;
+	padding:0;
+}
+	
+.all_cards table {
+	border:none;
+	margin: 0 0 50px 0;
+}
+
+.all_cards td, th{
+	border:none;
+	padding: 2px 20px 2px 20px;
+}
+
+
+.cards {
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.cards img {vertical-align: middle;}
+
+.cards .container {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 100%;
+  padding-top: 0px;
+  box-sizing: border-box;
+}
+.cards .container h3 {
+  font-size: 14px;
+  color: #f1f1f1;
+  text-align:center;
+}
+.cards .container p {
+  font-size: 14px;
+  color: #f1f1f1;
+  text-align:center;
 }
