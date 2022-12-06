@@ -16,6 +16,9 @@ CSS STRUCTURE:
 
 3. WEBPAGES STRUCTURE
 	3.1 Contact
+	3.2 Deli
+	3.3 Sights
+	3.4 Hotels
 ------------------------------------------------*/	
 
 
@@ -159,7 +162,6 @@ td{
 }
 
 
-
 /*============================================================================================*/
 /*============================================================================================*/
 /* 2. SITE STRUCTURE */
@@ -256,6 +258,7 @@ td{
   flex: 33.33%;
   padding: 5px;
 }
+
 /*----------------------------------------------*/
 /* 2.4 Footer */
 /*----------------------------------------------*/
@@ -316,7 +319,6 @@ td{
   width: 2em; 				/* Also needed for space (tweak if needed) */
   margin-left: -1em; 		/* Also needed for space (tweak if needed) */
 }
-
 
 /*----------------------------------------------*/
 /* 3.2 Deli */
@@ -384,4 +386,108 @@ td{
   font-size: 14px;
   color: #f1f1f1;
   text-align:center;
+}
+
+/*----------------------------------------------*/
+/* 3.3 Sights */
+/*----------------------------------------------*/
+
+.grid_container{
+	width:900px;
+	margin:auto;
+	padding:0;
+}
+
+.element{
+	margin-top: 30px;
+	display: grid;
+	place-items: center;
+}
+
+.right_img {
+	grid-template-columns: 1fr 400px;
+}
+
+.left_img {
+	grid-template-columns: 400px 1fr;
+}
+
+.sights_image {
+	border-radius: 5%;
+	border:rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+.sights_row_images {
+	display: grid;
+	grid-template-columns: 280px 300px 280px;
+	gap: 20px;
+	padding-bottom: 30px;
+	margin-left: 40;
+	place-items: center;
+	border-bottom: rgba(0, 0, 0, 0.1) solid 1px;;
+}
+.element p,h2 {
+	margin: 10px;
+}
+
+.element p {
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, .1);
+	padding: 10px;
+}
+
+/*----------------------------------------------*/
+/* 3.4 Hotels */
+/*----------------------------------------------*/
+
+.hotels_layout {
+	width:1024px;
+	margin:auto;
+	padding:0;
+}
+
+.hotels_layout p{
+	margin-bottom: 20px;
+}
+.hotels_right_img {
+	float:right; 
+	width:250px; 
+	margin-left:20px; 
+	margin-bottom:20px; 
+	padding: 2px;
+}
+		
+.hotels_cards {
+	float:left;
+	width:300px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	background-color:white;
+	}
+	
+.hotels_cards .hotels_top_image {
+	box-shadow: 2px 2px 6px #555;
+	}
+.hotels_cards .hotels_container {
+	padding:20px;
+}
+
+.hotels_cards .hotels_container p{
+	font-size:18px;
+	font-weight:normal;
+	font-family: 'LeagueGothic', 'Open Sans Condensed', Tahoma, Geneva, sans-serif;
+	color:#01134b;  /* ΣΚΟΥΡΟ ΜΠΛΕ */
+	line-height:1.2em;
+	text-align:justify;
+}
+
+.hotels_layout table {
+	border:none;
+	margin: 0 0 50px 0;
+}
+
+.hotels_layout td, th{
+	border:none;
+	padding: 2px 0px 2px 0px;
 }
