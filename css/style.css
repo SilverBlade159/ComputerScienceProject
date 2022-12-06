@@ -18,7 +18,10 @@ CSS STRUCTURE:
 	3.1 Contact
 	3.2 Deli
 	3.3 Sights
+<<<<<<< HEAD
 	3.4 Hotels
+=======
+>>>>>>> 32c00d88c21178801966c9c549f749e47c9ca0db
 ------------------------------------------------*/	
 
 
@@ -434,6 +437,7 @@ td{
 	font-size: 16px;
 	background-color: rgba(0, 0, 0, .1);
 	padding: 10px;
+<<<<<<< HEAD
 }
 
 /*----------------------------------------------*/
@@ -491,3 +495,6 @@ td{
 	border:none;
 	padding: 2px 0px 2px 0px;
 }
+=======
+}
+>>>>>>> 32c00d88c21178801966c9c549f749e47c9ca0db
