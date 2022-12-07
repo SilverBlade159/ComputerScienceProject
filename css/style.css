@@ -1,21 +1,21 @@
 /*------------------------------------------------
 CSS STRUCTURE:
-
 1. GENERAL
 	1.1 Global Reset 
 	1.2 General Styles	
 	1.3 List Styles
 	1.4 Headers
 	1.5 Tables
-
 2. SITE STRUCTURE	
 	2.1 Header
 	2.2 Menu
 	2.3 Main
 	2.4 Footer
-
 3. WEBPAGES STRUCTURE
 	3.1 Contact
+	3.2 Deli
+	3.3 Sights
+	3.4 Hotels
 ------------------------------------------------*/	
 
 
@@ -158,8 +158,6 @@ td{
 	border:1px solid black;
 }
 
-
-
 /*============================================================================================*/
 /*============================================================================================*/
 /* 2. SITE STRUCTURE */
@@ -199,8 +197,9 @@ td{
 	background-color: grey;		
 	opacity:0.7;		/* Πόσο έντονα θα φαίνετε το background */
 }
+
 .inner_menu {
-	width:600px;
+	width:700px;
 	margin:auto;
 	padding:0px;
 }
@@ -227,6 +226,11 @@ td{
 /*----------------------------------------------*/
 /* 2.3 Main */
 /*----------------------------------------------*/
+#main {
+	width:100%;
+	margin:auto;
+	padding:0;
+}
 
 .thin_line {
 	position: relative;
@@ -242,11 +246,23 @@ td{
     height: 30px;
 }
 
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
 /*----------------------------------------------*/
 /* 2.4 Footer */
 /*----------------------------------------------*/
 
-#footer {
+/* footer 1 */
+
+/*#footer {
 	position:relative;
 	color: grey;
 	font: italic bold 20px sans-serif;
@@ -264,8 +280,81 @@ td{
 .footer_t td {
 	color:cyan;
 	size:14px;
-}
+}*/
 	
+/* footer 2 */
+
+.footer {
+	margin: auto;
+	width: 500px;
+}
+
+.creators {
+	box-sizing: content-box;
+	font-size: 16px;
+	font-weight: 550;
+	text-align: center;
+	padding-bottom: 10px;
+	width: 250px;
+	margin: 20px auto auto auto;
+	border-bottom: rgba(0, 0, 0, .1) thin solid;
+}
+
+.footer_names {
+	margin-top: 5px;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_names p {
+	transition: font-size 0.15s;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.footer_names p:hover {
+	color:rgba(0, 153, 255, 0.8);
+	font-weight: 550;
+}
+
+.logo_holder a:last-child{
+	display: none;
+}
+
+.logo_holder:hover a:first-child{
+	display: none;
+}
+
+.logo_holder:hover a:last-child{
+	display: block;
+}
+
+.logo_holder:hover img{
+	width: 23px;
+}
+
+.logo_grid_container {
+	display: grid;
+	place-items: center;
+	grid-template-columns: 80px 1fr 1fr 1fr 1fr;
+	width: 300px;
+	margin: 15px auto 15px auto;
+}
+
+.social_logo {
+	width: 22px;
+	border: #111111 1px solid;
+	border-radius: 40% 10% 20% 10%;
+	padding: 4px;
+	background-color: rgba(0, 255, 255, 0.333);
+}
+
+.copyright {
+	font-size: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
 
 /*============================================================================================*/
 /*============================================================================================*/
@@ -301,4 +390,176 @@ td{
   display: inline-block; 	/* Needed to add space between the bullet and the text */
   width: 2em; 				/* Also needed for space (tweak if needed) */
   margin-left: -1em; 		/* Also needed for space (tweak if needed) */
+}
+
+/*----------------------------------------------*/
+/* 3.2 Deli */
+/*----------------------------------------------*/
+
+.deli_layout {
+	width:1024px;
+	margin:auto;
+	padding:0;
+}
+
+.deli_layout p{
+	margin-bottom: 20px;
+}
+.deli_right_img {
+	float:right; 
+	width:250px; 
+	margin-left:20px; 
+	margin-bottom:20px; 
+	border:1px solid; 
+	border-radius: 8px; 
+	padding: 2px;
+}
+
+.all_cards {
+	width:800px;
+	margin:auto;
+	padding:0;
+}
+	
+.all_cards table {
+	border:none;
+	margin: 0 0 50px 0;
+}
+
+.all_cards td, th{
+	border:none;
+	padding: 2px 20px 2px 20px;
+}
+
+
+.cards {
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.cards img {vertical-align: middle;}
+
+.cards .container {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 100%;
+  padding-top: 0px;
+  box-sizing: border-box;
+}
+.cards .container h3 {
+  font-size: 14px;
+  color: #f1f1f1;
+  text-align:center;
+}
+.cards .container p {
+  font-size: 14px;
+  color: #f1f1f1;
+  text-align:center;
+}
+
+/*----------------------------------------------*/
+/* 3.3 Sights */
+/*----------------------------------------------*/
+
+.grid_container{
+	width:900px;
+	margin:auto;
+	padding:0;
+}
+
+.element{
+	margin-top: 30px;
+	display: grid;
+	place-items: center;
+}
+
+.right_img {
+	grid-template-columns: 1fr 400px;
+}
+
+.left_img {
+	grid-template-columns: 400px 1fr;
+}
+
+.sights_image {
+	border-radius: 5%;
+	border:rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+.sights_row_images {
+	display: grid;
+	grid-template-columns: 280px 300px 280px;
+	gap: 20px;
+	padding-bottom: 30px;
+	margin-left: 40;
+	place-items: center;
+	border-bottom: rgba(0, 0, 0, 0.1) solid 1px;;
+}
+.element p,h2 {
+	margin: 10px;
+}
+
+.element p {
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, .1);
+	padding: 10px;
+}
+
+/*----------------------------------------------*/
+/* 3.4 Hotels */
+/*----------------------------------------------*/
+
+.hotels_layout {
+	width:1024px;
+	margin:auto;
+	padding:0;
+}
+
+.hotels_layout p{
+	margin-bottom: 20px;
+}
+.hotels_right_img {
+	float:right; 
+	width:250px; 
+	margin-left:20px; 
+	margin-bottom:20px; 
+	padding: 2px;
+}
+		
+.hotels_cards {
+	float:left;
+	width:300px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	background-color:white;
+	}
+	
+.hotels_cards .hotels_top_image {
+	box-shadow: 2px 2px 6px #555;
+	}
+.hotels_cards .hotels_container {
+	padding:20px;
+}
+
+.hotels_cards .hotels_container p{
+	font-size:18px;
+	font-weight:normal;
+	font-family: 'LeagueGothic', 'Open Sans Condensed', Tahoma, Geneva, sans-serif;
+	color:#01134b;  /* ΣΚΟΥΡΟ ΜΠΛΕ */
+	line-height:1.2em;
+	text-align:justify;
+}
+
+.hotels_layout table {
+	border:none;
+	margin: 0 0 50px 0;
+}
+
+.hotels_layout td, th{
+	border:none;
+	padding: 2px 0px 2px 0px;
 }
