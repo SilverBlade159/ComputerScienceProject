@@ -15,11 +15,8 @@ CSS STRUCTURE:
 	3.1 Contact
 	3.2 Deli
 	3.3 Sights
-<<<<<<< HEAD
 	3.4 Hotels
-=======
-<<<<<<< HEAD
-	3.4 Hotels
+	3.5 Beaches
 =======
 >>>>>>> 32c00d88c21178801966c9c549f749e47c9ca0db
 >>>>>>> c941453394e220796e4baa9b70e249f79d7884ca
@@ -407,6 +404,7 @@ a:active {			/* selected link */
 
 .contact td, th{
 	padding: 2px 20px 2px 20px;
+	font-size:16px;
 }
 
 .contact ul {
@@ -415,6 +413,7 @@ a:active {			/* selected link */
 .contact ul li::before{
   content: "\2022";  		/* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: red; 				/* Change the color */
+  font-size:16px;
   font-weight: bold; 		/* If you want it to be bold */
   display: inline-block; 	/* Needed to add space between the bullet and the text */
   width: 2em; 				/* Also needed for space (tweak if needed) */
@@ -590,4 +589,27 @@ a:active {			/* selected link */
 .hotels_layout td, th{
 	border:none;
 	padding: 2px 0px 2px 0px;
+}
+
+
+/*----------------------------------------------*/
+/* 3.4 Beaches */
+/*----------------------------------------------*/
+
+
+.beaches_layout {
+	width:1024px;
+	margin:auto;
+	padding:0;
+}
+
+.beaches_layout p{
+	margin-top: 40px;
+	margin-bottom:20px;
+}
+.line {
+	margin-top:20px;
+	height:1px;
+	width:100%;
+	background-color:grey;
 }
