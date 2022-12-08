@@ -165,6 +165,24 @@ td{
 	border:1px solid black;
 }
 
+
+
+/*----------------------------------------------*/
+/* 1.5 Links */
+/*----------------------------------------------*/
+a:link {			/* unvisited link */
+  color: blue;
+}
+a:visited {			/* visited link */
+  color: blue;
+}
+a:hover {			/* mouse over link */
+  color: orange;
+}
+a:active {			/* selected link */
+  color: blue;
+}
+
 /*============================================================================================*/
 /*============================================================================================*/
 /* 2. SITE STRUCTURE */
@@ -206,7 +224,7 @@ td{
 }
 
 .inner_menu {
-	width:700px;
+	width:800px;
 	margin:auto;
 	padding:0px;
 }
@@ -227,6 +245,10 @@ td{
 	text-decoration: none;
 }
 .menu li a:hover {
+	background-color: #111111;
+}
+.menu li.selected a {
+	color:#04e2ea;
 	background-color: #111111;
 }
 
@@ -374,7 +396,7 @@ td{
 /*----------------------------------------------*/
 
 .contact {
-	width:500px;
+	width:1024px;
 	margin:auto;
 	padding:0;
 }
@@ -472,7 +494,7 @@ td{
 /*----------------------------------------------*/
 
 .grid_container{
-	width:900px;
+	width:1024px;
 	margin:auto;
 	padding:0;
 }
@@ -498,10 +520,9 @@ td{
 
 .sights_row_images {
 	display: grid;
-	grid-template-columns: 280px 300px 280px;
-	gap: 20px;
+	grid-template-columns: 320px 320px 320px;
+	gap: 32px;
 	padding-bottom: 30px;
-	margin-left: 40;
 	place-items: center;
 	border-bottom: rgba(0, 0, 0, 0.1) solid 1px;;
 }
