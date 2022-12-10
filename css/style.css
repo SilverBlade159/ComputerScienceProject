@@ -17,9 +17,6 @@ CSS STRUCTURE:
 	3.3 Sights
 	3.4 Hotels
 	3.5 Beaches
-=======
->>>>>>> 32c00d88c21178801966c9c549f749e47c9ca0db
->>>>>>> c941453394e220796e4baa9b70e249f79d7884ca
 ------------------------------------------------*/	
 
 
@@ -505,11 +502,11 @@ a:active {			/* selected link */
 }
 
 .right_img {
-	grid-template-columns: 1fr 400px;
+	grid-template-columns: 1fr 250px;
 }
 
 .left_img {
-	grid-template-columns: 400px 1fr;
+	grid-template-columns: 250px 1fr;
 }
 
 .sights_image {
